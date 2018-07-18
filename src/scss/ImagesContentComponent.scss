@@ -1,0 +1,51 @@
+.images-content-component{
+    text-align: center;
+    .big-image{
+        position: absolute;
+        width: 100%;
+        min-height: 100vh;
+        background: rgba(128, 128, 128, 0.6);
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // padding: 1rem;
+        &.hidden{
+            display: none;
+        }
+        &-container{
+            overflow: hidden;
+            .image{
+                width: 100%;
+            }
+        }
+        .close{
+            position: absolute;
+            right: 4rem;
+            top: 2rem;
+            font-size: 2rem;
+            font-weight: 600;
+            cursor: pointer;
+            background: white;
+            border-radius: 2rem;
+            width: 2.5rem;
+            height: 2.5rem;
+            &:hover{
+                box-shadow: 0 0 3rem 0 white;
+            }
+        }
+    }
+    .nav{
+        margin-top: 1rem;
+        .prev{
+            cursor: pointer;
+            margin-right: 1rem;
+        }
+        .current-image{
+            margin-right: 1rem;
+        }
+        .next{
+            cursor: pointer;
+        }
+    }
+}

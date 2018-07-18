@@ -1,0 +1,29 @@
+{
+  "name": "FlickrSearch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass ./src/App.scss --recursive --output src",
+    "watch-css": "node-sass --watch ./src/App.scss --recursive --output src",
+    "build-js": "react-scripts build",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "author": "Lukasz Rak",
+  "license": "ISC",
+  "homepage": ".",
+  "dependencies": {
+    "node-sass": "4.7.2",
+    "npm-run-all": "^4.1.1",
+    "react": "16.0.0",
+    "react-dom": "16.0.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-react": "^7.7.0",
+    "react-scripts": "0.9.5"
+  }
+}

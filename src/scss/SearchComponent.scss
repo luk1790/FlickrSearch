@@ -1,0 +1,17 @@
+.search{
+    margin: 1rem 0rem;
+    text-align: center;
+    .search-input{
+        padding: 0.3rem 0.5rem;
+        border: none;
+        border-bottom: 1px solid;
+        width: 7rem;
+        outline: none;
+        margin-right: 1rem;
+        &:focus{
+            border-bottom: 1px dashed;
+        }
+    }
+    .search-btn{
+    }
+}

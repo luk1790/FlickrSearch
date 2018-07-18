@@ -1,0 +1,18 @@
+.hidden{
+    display: none;
+}
+
+.btn{
+    background: white;
+    border: none;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.5rem;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 0px 0px 3px 0px black;
+    }
+}
+
+@import './scss/SearchComponent.scss';
+@import './scss/ImagesContentComponent.scss';
